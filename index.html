@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Himanshu Portfolio.</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-button" id="menuButton">☰</button>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <p class="small-heading">HELLO, WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Himanshu Boharpi</span></h1>
+            <h3>B.Tech Computer Science & Information Technology Student</h3>
+            <p>
+                I am interested in web development and programming.
+                I enjoy learning new technologies and making small projects
+                to improve my skills.
+            </p>
+            <a href="#projects" class="main-button">Explore My Work</a>
+            <a href="#contact" class="second-button">Contact Me</a>
+        </div>
+
+        <div class="home-image">
+            <img src="photonew.jpeg"
+                 alt="Profile photo">
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                My name is Himanshu. I am pursuing B.Tech in Computer Science
+                and Information Technology. I am interested in software
+                development and want to build a career in the technology field.
+            </p>
+            <p>
+                Currently, I am learning HTML, CSS and JavaScript for web
+                development. I also practise Java programming and problem
+                solving. I believe that regular practice and building projects
+                are good ways to improve.
+            </p>
+            <p>
+                My goal is to become a skilled developer and work on projects
+                that solve real problems.
+            </p>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I am learning and using.</p>
+
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+	    <div class="skill">JavaFX</div>
+            <div class="skill">C Programming</div>
+	    <div class="skill">Python</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">VS Code</div>
+            
+ 	    
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Some projects I have worked on during my learning journey.</p>
+
+        <div class="project-list">
+            <div class="project">
+               
+                <div class="project-info">
+                    <h3>Typing Skill Tester</h3>
+                    <p>
+                        A Java and JavaFX based application that helps users
+                        practise typing and check their speed and accuracy.
+                    </p>
+                    <p class="technology">Technology: Java, JavaFX</p>
+                </div>
+            </div>
+
+            <div class="project">
+                               <div class="project-info">
+                    <h3>Bhopal Wonders</h3>
+                    <p>
+                        A tourism website created to provide information about
+                        popular places to visit in Bhopal.
+                    </p>
+                    <p class="technology">Technology: HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            
+	      <div class="project">
+               
+                <div class="project-info">
+                    <h3>Bus Route Finder</h3>
+                    <p>
+                        Built a python application to find the correct Bus for Students.
+                    </p>
+                    <p class="technology">Technology: Python</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="contact-layout">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+               
+		<p><strong>Email:</strong> <a href="mailto:himanshuboharpi37@gmail.com">himanshuboharpi37@gmail.com</a></p>
+		<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/himanshu-boharpi-260603325/" target="_blank">himanshu-boharpi</a></p>
+		<p><strong>GitHub:</strong> <a href="https://github.com/himanshuboharpi275-pixel" target="_blank">himanshuboharpi275-pixel</a></p>          
+  </div>
+
+            <div class="contact-form-card">
+                <h2>Contact Form</h2>
+                <form id="contactForm" action="https://formsubmit.co/himanshuboharpi37@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your  name">
+                    <small class="error" id="nameError"></small>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <small class="error" id="emailError"></small>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                    <small class="error" id="messageError"></small>
+
+                    <button type="submit" class="main-button">Send Message</button>
+                    <p id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><span id="year"></span> | Portfolio Website | Designed by Himanshu Boharpi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
